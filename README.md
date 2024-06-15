@@ -12,3 +12,4 @@ Preliminary HOWTO:
 4. Get a coffee while you wait for it to do its thing, or look at the mad internals with `watch -n 3 cat one.h` and/or `watch -n 3 cat two.h`.
 
 Output only works correctly in `gcc` because of some nonstandard stuff.
+Input currently doesn't work. TODO?
