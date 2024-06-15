@@ -9,6 +9,6 @@ Preliminary HOWTO:
 1. Generate some lookup tables with `generate_lookup_tables.sh`
 2. `cd` into the `brainfuck` directory.
 3. Execute `run.sh`. This will run a Hello World program (warning: pretty slow) taken from [Wikipedia](https://en.wikipedia.org/w/index.php?title=Brainfuck&oldid=1229044286)
-4. Get a coffee while you wait for it to do its thing, or look at the mad internals with `watch -n 3 one.h` and/or `watch -n 3 two.h`.
+4. Get a coffee while you wait for it to do its thing, or look at the mad internals with `watch -n 3 cat one.h` and/or `watch -n 3 cat two.h`.
 
 Output only works correctly in `gcc` because of some nonstandard stuff.
