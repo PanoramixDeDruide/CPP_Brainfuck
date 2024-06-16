@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cpp -P -Wno-trigraphs -trigraphs -I . -I .. kickstarter.h > one.h 2> /dev/null
+cpp -P -Wno-trigraphs -trigraphs -I . -I .. parse_program.h > one.h 2> /dev/null
 while [[ 1 -eq 1 ]]; do
     grep -q "Program terminated" one.h
     res=$?
@@ -22,4 +22,4 @@ if [[ $broken -eq 1 ]]; then
 else
   cpp -P -Wno-trigraphs -trigraphs -I . -I .. two.h 2> /dev/null
 fi
-rm -f one.h two.h
+#rm -f one.h two.h

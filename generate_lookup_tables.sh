@@ -1,11 +1,20 @@
 #!/bin/bash
 
-if [[ ! -f empty_memory.h ]]; then
-	cpp -P -Wno-trigraphs -I empty_memory empty_memory/numbers.h -o empty_memory.h
+if [[ ! -f memory.h ]]; then
+	cpp -P -Wno-trigraphs -I memory memory/numbers.h -o memory.h
 fi
 
-if [[ ! -f empty_memory_2.h ]]; then
-	cpp -P -Wno-trigraphs -I empty_memory_2 empty_memory_2/numbers.h -o empty_memory_2.h
+if [[ ! -f memory_2.h ]]; then
+	cpp -P -Wno-trigraphs -I memory_2 memory_2/numbers.h -o memory_2.h
+fi
+
+
+if [[ ! -f program_memory.h ]]; then
+	cpp -P -Wno-trigraphs -I program_memory program_memory/numbers.h -o program_memory.h
+fi
+
+if [[ ! -f program_memory_2.h ]]; then
+	cpp -P -Wno-trigraphs -I program_memory_2 program_memory_2/numbers.h -o program_memory_2.h
 fi
 
 if [[ ! -f non_zero.h ]]; then

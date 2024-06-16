@@ -73,7 +73,9 @@ H SOLUTION3_
 ???/
 ?=endif
 #  endif
-#  include <step_phase_1.h>
+#  if XPROGLOOKUP(SKIP_COUNTER) != OPEN
+#    include <step_phase_1.h>
+#  endif
 ???/
 ?=define NEXT_???/
 ?/
@@ -91,7 +93,7 @@ STEP 1
 ?=undef SKIP_????/
 ?/
 ?/
-COUNTER_
+COUNTER
 ????/
 ?/
 ?=define SKIP_????/
@@ -175,7 +177,9 @@ H_ SOLUTION3
 ???/
 ?=endif
 #  endif
-#  include <step_phase_1.h>
+#  if XPROGLOOKUP(SKIP_COUNTER_) != OPEN
+#    include <step_phase_1.h>
+#  endif
 ???/
 ?=define NEXT_???/
 ?/

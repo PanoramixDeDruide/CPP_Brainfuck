@@ -10,8 +10,6 @@ E
 E 1
 
 ???/
-?=include <memory.h>
-???/
 ?=include <program_memory.h>
 
 #else
@@ -25,8 +23,6 @@ E
 ?/
 E 2
 
-???/
-?=include <memory_2.h>
 ???/
 ?=include <program_memory_2.h>
 
