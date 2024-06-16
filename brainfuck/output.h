@@ -2,7 +2,7 @@
 #include <processed_numbers.h>
 
 #define PRINT_NUMBER(x1,x2,x3,x4,...) ???/
-?/u##x1##x2##x3##x4
+?/u00##x3##x4
 
 #define XPRINT_NUMBER(x1,x2,x3,x4,...) PRINT_NUMBER(x1,x2,x3,x4)
 
