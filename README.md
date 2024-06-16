@@ -3,8 +3,6 @@ A Brainfuck interpreter implemented in the C preprocessor, with a little help fr
 
 Borrows some code from [my CPP calculator](https://github.com/PanoramixDeDruide/CPP_Calculator)
 
-TODO: Implement support for brackets exceeding 10 nested levels.
-
 Preliminary HOWTO:
 1. Generate some lookup tables with `generate_lookup_tables.sh`
 2. `cd` into the `brainfuck` directory.
