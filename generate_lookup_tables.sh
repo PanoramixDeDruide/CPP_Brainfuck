@@ -19,3 +19,7 @@ fi
 if [[ ! -f adds.h ]]; then
 	./extended_adder.sh > adds.h
 fi
+
+if [[ ! -f character_table.h ]]; then
+	cpp -P -Wno-trigraphs -trigraphs -I character_table character_table/numbers.h -o character_table.h
+fi

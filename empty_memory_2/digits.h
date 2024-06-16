@@ -113,6 +113,8 @@
 ?=define SKIP_COUNTER SKIP_COUNTER_
 ???/
 ?=define DEPTH DEPTH_
+???/
+?=define TO_OUTPUT TO_OUTPUT_
         #endif
 ???/
 ?=define XCONCAT(MEMORY_, REAL_DIGITS) XCONCAT(MEMORY__, REAL_DIGITS)
