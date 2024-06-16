@@ -22,4 +22,4 @@ if [[ $broken -eq 1 ]]; then
 else
   cpp -P -Wno-trigraphs -trigraphs -I . -I .. two.h 2> /dev/null
 fi
-#rm -f one.h two.h
+rm -f one.h two.h
