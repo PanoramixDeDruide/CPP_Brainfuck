@@ -1,3 +1,6 @@
+#include <step_phase_1.h>
+#include <true_end.h>
+/*
 #include <character_table.h>
 #define PROCESS(a, b) a##b
 #define XPROCESS(a, b) PROCESS(a, b)
@@ -8,3 +11,4 @@ TO_OUTPUT_
 #endif
 ???/
 ?=include <true_end.h>
+*/

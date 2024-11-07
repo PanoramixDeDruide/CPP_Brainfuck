@@ -3,12 +3,17 @@ A Brainfuck interpreter implemented in the C preprocessor, with a little help fr
 
 Borrows some code from [my CPP calculator](https://github.com/PanoramixDeDruide/CPP_Calculator)
 
-Preliminary HOWTO:
+Prerequisites:
+-GNU GCC C preprocessor (as `cpp` in `PATH`)
+-Clang 16 C preprocessor (as `clang-cpp-16` in `PATH`) (can be changed to different versions by editing `run.py`)
+-Patience
+
+HOWTO:
 1. Generate some lookup tables with `generate_lookup_tables.sh`
-2. `cd` into the `brainfuck` directory.
-3. Execute `run.sh`. This will run a Hello World program (warning: pretty slow) taken from [Wikipedia](https://en.wikipedia.org/w/index.php?title=Brainfuck&oldid=1229044286)
-4. Get a coffee while you wait for it to do its thing, or look at the mad internals with `watch -n1 cat one.h` and/or `watch -n1 cat two.h`.
+2. `cd` into the `brainfuck` directory
+3. Sample programs include a Hello World program from Wikipedia, a ROT13 program from Wikipedia, and a Mandelbrot set visualizer (from [here](https://github.com/ErikDubbelboer/brainfuck-jit/blob/master/mandelbrot.bf)) and can be found in the `sample_programs/` directory
+4. Translate your input (if used by your program) to something the preprocessor can work with with `gen_input.sh` (I.E. `echo "Hello World!" | ./gen_input.sh`)
+4. Copy a sample program to the file `program.h` or create your own one with `gen_program.sh` (I.E. `echo ",.." | ./gen_program.sh`)
+5. Run ./run.py
+6. Wait for it to complete. WARNING: It took my AMD Ryzen 5 5600X over a week to buffer just six characters from the visualized Mandelbrot set. Output will be presented to you in your terminal once done.
 
-Output only works correctly in `gcc` because of some nonstandard stuff.
-
-Input currently doesn't work. TODO?

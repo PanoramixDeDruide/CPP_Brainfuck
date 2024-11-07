@@ -14,9 +14,9 @@
 #    define PROGRAM_COUNTER 0
 #    undef TO_OUTPUT
 #    define TO_OUTPUT
+#    include <program_input.h>
 #    include <kickstart_memory.h>
 #    include <memory.h>
-//#    include <program_memory.h>
 #    include <step.h>
 #  endif
 #else
@@ -33,9 +33,9 @@
 #    define PROGRAM_COUNTER_ 0
 #    undef TO_OUTPUT_
 #    define TO_OUTPUT_
+#    include <program_input.h>
 #    include <kickstart_memory_2.h>
 #    include <memory_2.h>
-//#    include <program_memory_2.h>
 #    include <step.h>
 #  endif
 #endif

@@ -75,6 +75,10 @@ H SOLUTION3_
 #  endif
 #  if XPROGLOOKUP(SKIP_COUNTER) != CLOSE
 #    include <step_phase_1.h>
+#    if XPROGLOOKUP(SKIP_COUNTER) != OPEN
+???/
+?=include <step_phase_1.h>
+#    endif
 #  endif
 ???/
 ?=define NEXT_???/
@@ -177,8 +181,12 @@ H_ SOLUTION3
 ???/
 ?=endif
 #  endif
-#  if XPROGLOOKUP(SKIP_COUNTER_) == CLOSE
+#  if XPROGLOOKUP(SKIP_COUNTER_) != CLOSE
 #    include <step_phase_1.h>
+#    if XPROGLOOKUP(SKIP_COUNTER_) != OPEN
+???/
+?=include <step_phase_1.h>
+#    endif
 #  endif
 ???/
 ?=define NEXT_???/

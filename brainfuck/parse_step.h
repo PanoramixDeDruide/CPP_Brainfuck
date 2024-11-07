@@ -6,7 +6,6 @@
 #define OPX(N, LIST) XJOIN(OP_, N) LIST
 #define OP_0(a, ...) a
 #define OP_1(a, ...) __VA_ARGS__
-#define OTHER_OPS(a, ...) __VA_ARGS__
 
 #define NEXT_OP 1
 #if MODE == 1

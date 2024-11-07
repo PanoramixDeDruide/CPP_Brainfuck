@@ -21,6 +21,9 @@
 #define OUTPUT ???/
 ?=include <output.h>
 
+#define INPUT ???/
+?=include <input.h>
+
 #define END ???/
 ?=include <end.h>
 

@@ -8,7 +8,6 @@ if [[ ! -f memory_2.h ]]; then
 	cpp -P -Wno-trigraphs -I memory_2 memory_2/numbers.h -o memory_2.h
 fi
 
-
 if [[ ! -f program_memory.h ]]; then
 	cpp -P -Wno-trigraphs -I program_memory program_memory/numbers.h -o program_memory.h
 fi
@@ -23,6 +22,18 @@ fi
 
 if [[ ! -f processed_numbers.h ]]; then
 	cpp -P -Wno-trigraphs -I number_sources number_sources/numbers.h -o processed_numbers.h
+fi
+
+if [[ ! -f kickstart_memory.h ]]; then
+	cpp -P -Wno-trigraphs -I kickstart_memory kickstart_memory/numbers.h -o kickstart_memory.h
+fi
+
+if [[ ! -f kickstart_memory_2.h ]]; then
+	cpp -P -Wno-trigraphs -I kickstart_memory_2 kickstart_memory_2/numbers.h -o kickstart_memory_2.h
+fi
+
+if [[ ! -f kickstart_program.h ]]; then
+	cpp -P -Wno-trigraphs -I kickstart_program kickstart_program/numbers.h -o kickstart_program.h
 fi
 
 if [[ ! -f adds.h ]]; then
