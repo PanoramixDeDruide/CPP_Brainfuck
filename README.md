@@ -4,9 +4,9 @@ A Brainfuck interpreter implemented in the C preprocessor, with a little help fr
 Borrows some code from [my CPP calculator](https://github.com/PanoramixDeDruide/CPP_Calculator)
 
 Prerequisites:
--GNU GCC C preprocessor (as `cpp` in `PATH`)
--Clang 16 C preprocessor (as `clang-cpp-16` in `PATH`) (can be changed to different versions by editing `run.py`)
--Patience
+- GNU GCC C preprocessor (as `cpp` in `PATH`)
+- Clang 16 C preprocessor (as `clang-cpp-16` in `PATH`) (can be changed to different versions by editing `run.py`)
+- Patience
 
 HOWTO:
 1. Generate some lookup tables with `generate_lookup_tables.sh`
