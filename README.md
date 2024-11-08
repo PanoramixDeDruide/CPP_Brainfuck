@@ -7,6 +7,7 @@ Prerequisites:
 - GNU GCC C preprocessor (as `cpp` in `PATH`)
 - Clang 16 C preprocessor (as `clang-cpp-16` in `PATH`) (can be changed to different versions by editing `run.py`)
 - Bash
+- Python
 - Patience
 
 HOWTO:
